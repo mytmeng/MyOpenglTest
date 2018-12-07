@@ -1,0 +1,5 @@
+aux_source_directory(. DIR_SRCS)
+aux_source_directory(./CommonTools DIR_TOOLS)
+add_executable(test1 ${DIR_SRCS} ${DIR_TOOLS})
+configure_file(resources/texture1.png ${CMAKE_CURRENT_BINARY_DIR}/texture1.png)
+target_link_libraries(test1 glfw3 opengl32)
