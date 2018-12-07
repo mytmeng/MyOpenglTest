@@ -1,3 +1,0 @@
-F:/cmakeTest/OpenGl/LibTest/Out/CMakeFiles/ALL_BUILD.dir
-F:/cmakeTest/OpenGl/LibTest/Out/CMakeFiles/ZERO_CHECK.dir
-F:/cmakeTest/OpenGl/LibTest/Out/test1/CMakeFiles/test1.dir
