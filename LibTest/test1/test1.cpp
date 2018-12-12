@@ -33,13 +33,14 @@ int main(int argc, char** argv) {
 	glBindTexture(GL_TEXTURE_2D, textureID);
 
 	char input[100];
+	std::cout<<"请输入文件路径:";
 	std::cin>>input;
 	char* content;
 		content = ReadTextFile(input);
-			std::cout<<"i="<<content<<std::endl;
+			std::cout<<content<<std::endl;
 		free(content);
 
-		unsigned char* textureData = stbi_load("texture1.png", &textureWidth, &textureHeight, &textureChannels, 0);
+		unsigned char* textureData = stbi_load("resources/texture1.png", &textureWidth, &textureHeight, &textureChannels, 0);
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, textureWidth, textureHeight, 0, GL_RGB, GL_UNSIGNED_BYTE, textureData);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
